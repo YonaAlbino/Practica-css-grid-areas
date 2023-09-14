@@ -1,0 +1,122 @@
+header{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:  "header1  header2"
+                          "header1  header2";
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+header .seccion1{
+    grid-area: header1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+}
+
+header .seccion1 .titulo{
+     font-weight: bold;
+     font-size: 40px;
+}
+
+header .seccion1 .boton{
+   background-color: rgb(255, 136, 0) ;
+   padding: 5px;
+   border-radius: 20%;
+   text-decoration: none;
+   color: #000;
+   
+}
+
+header .seccion1 .texto-decorativo{
+    width: 70%;
+    text-align: start;
+}
+
+header .seccion2 img{
+    width: 100%;
+    height: 100%;
+}
+
+header .seccion2{
+    grid-area: header2;
+}
+
+main .tituloMain{
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+main  .contenedor_imagenes{
+    display: grid;
+    grid-gap: 10px;
+    width: 60%;
+    height: 600px;
+    margin: auto;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas: "uno uno dos tres"
+                         "uno uno cuatro cinco ";
+}
+
+
+main .contenedor_imagenes img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+ 
+}
+
+
+main .contenedor_imagenes .imagen1{
+   grid-area: uno;
+}
+
+main .contenedor_imagenes .imagen3{
+    grid-area: tres;
+    background-color: red;
+}
+
+footer {
+    margin-bottom: 50px;
+}
+
+footer .tituloFooter{
+    margin: 50px 0 50px 0;
+    text-align: center;
+}
+
+footer .tituloFooter p{
+    font-size: 25px;
+}
+
+footer .imagenesFooter {
+    width: 60%;
+    display: grid;
+    grid-gap: 10px;
+    justify-content: space-between;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(1fr);
+    grid-template-areas: "uno dos tres cuatro cinco";
+    margin: auto;
+}
+
+footer .imagenesFooter div{
+    background-color: rgb(255, 214, 221);
+    display: grid;
+    place-items: center;
+   border-radius: 10px 0 0 0;
+}
+
+footer .imagenesFooter div img {
+    max-width: 90%;
+    height:  90%;
+}
